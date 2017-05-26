@@ -1,3 +1,8 @@
+.carusel {
+  display: block;
+  height: 150px;
+}
+
 .carousel-hider {
   width: 350px;
   overflow: hidden;

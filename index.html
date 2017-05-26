@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jquery.carusel.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/bio.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -47,7 +49,29 @@
       
     </section>
 
-  </div>
+    <section class="tmpl"></section>
+
+    <script tipe="text/html" id="bio">
+
+      <h2><%= name %></h2>
+      <span class="proff"><%= proff %></span>
+      <h3><%= wanted %></h3>
+      <ul class="list">
+        <li> <%= want1 %> </li>
+        <li> <%= want2 %> </li>
+        <li> <%= want3 %> </li>
+      </ul>
+      <h3> <%= phoneTitle %> </h3>
+      <p> <%= phone %> </p>
+      <h3> <%= fbTitle %> </h3>
+      <a href= <%= fbHref %> > <%= fb %> </a>
+      <h3> <%= feedbackTitle %> </h3>
+      <p> <%= feedback %> </p>
+
+    </script>
+
+
+</div>
 
 </body>
 </html>
